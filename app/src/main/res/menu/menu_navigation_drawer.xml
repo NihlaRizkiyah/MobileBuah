@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:checked="true"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/ic_users"
+            android:checked="true"
+            android:title="Customer" />
+        <item
+            android:id="@+id/nav_produk"
+            android:icon="@drawable/ic_dataset"
+            android:title="Produk" />
+        <item
+            android:id="@+id/nav_kategori"
+            android:icon="@drawable/ic_inbox"
+            android:title="Kategori" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_loop"
+            android:title="All Orders" />
+        <item
+            android:id="@+id/nav_pos"
+            android:icon="@drawable/ic_money"
+            android:title="POS" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

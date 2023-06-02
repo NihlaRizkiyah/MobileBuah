@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.CustomerAddActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/spacing_large"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Tambah Produk"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="@dimen/spacing_large"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgv_produk"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/no_image"
+                app:civ_border="true"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_medium"/>
+
+            <TextView
+                android:id="@+id/tv_pilih_gambar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Pilih Gambar"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large"/>
+
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_large"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/grey_300"
+                android:textColor="@color/grey_100"
+                android:textSize="17sp"
+                android:inputType="text"
+                android:hint="Nama"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large"/>
+
+            <Spinner
+                android:id="@+id/sp_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="@dimen/spacing_large"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/grey_300"
+                android:textColor="@color/grey_100"
+                android:textSize="17sp"
+                android:inputType="text" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large"/>
+
+            <EditText
+                android:id="@+id/et_kode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_large"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/grey_300"
+                android:textColor="@color/grey_100"
+                android:textSize="17sp"
+                android:inputType="text"
+                android:hint="Kode"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large"/>
+
+            <EditText
+                android:id="@+id/et_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_large"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/grey_300"
+                android:textColor="@color/grey_100"
+                android:textSize="17sp"
+                android:inputType="number"
+                android:hint="Harga"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large"/>
+
+            <EditText
+                android:id="@+id/et_stok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_large"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/grey_300"
+                android:textColor="@color/grey_100"
+                android:textSize="17sp"
+                android:inputType="number"
+                android:hint="Stok"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large"/>
+
+            <EditText
+                android:id="@+id/et_keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_large"
+                android:background="@drawable/bg_edit_text"
+                android:textColorHint="@color/grey_300"
+                android:textColor="@color/grey_100"
+                android:textSize="17sp"
+                android:lines="2"
+                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:hint="Keterangan"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_xlarge"/>
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_primary"
+                android:text="Simpan"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
